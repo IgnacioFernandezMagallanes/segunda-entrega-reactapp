@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "name": "Almendras",
+    "type": "Frutos Secos",
+    "description": "Fruto seco ideal para acompañar con el mate",
+    "price": 2500,
+    "img": "https://www.lavanguardia.com/files/og_thumbnail/uploads/2021/03/05/604204064a61a.jpeg",
+    "quanty": 1
+  },
+  {
+    "id": 2,
+    "name": "Nueces",
+    "type": "Frutos Secos",
+    "description": "Te hace bien al corazon, y ¡no vas a poder parar de comerlo!",
+    "price": 2000,
+    "img": "https://e00-elmundo.uecdn.es/assets/multimedia/imagenes/2022/01/04/16413064087771.jpg",
+    "quanty": 1
+  },
+  {
+    "id": 3,
+    "name": "Castaña de Caju",
+    "type": "Frutos Secos",
+    "description": "¡Excelente para desayuno, almuerzo, merienda o cena!",
+    "price": 2800,
+    "img": "https://lascameliaslp.com.ar/wp-content/uploads/Casta%C3%B1as-de-Caj%C3%BA-e1648582530528.jpeg",
+    "quanty": 1
+  },
+  {
+    "id": 4,
+    "name": "Granola con chocolate",
+    "type": "Granola",
+    "description": "Contiene avena, castañas, nueves y pepitas de chocolate",
+    "price": 2400,
+    "img": "https://santaalbahaca.com/wp-content/uploads/2021/11/granolachocolate.jpg",
+    "quanty": 1
+  },
+  {
+    "id": 5,
+    "name": "Granola con miel",
+    "type": "Granola",
+    "description": "Contiene avena, castañas, nueves y miel",
+    "price": 2200,
+    "img": "https://beevoo.net/blog/wp-content/uploads/2021/02/granola-sin-azucar-con-miel.jpg",
+    "quanty": 1
+  },
+  {
+    "id": 6,
+    "name": "Granola con pasas",
+    "type": "Granola",
+    "description": "Contiene avena, castañas, nueces y pasas de uva",
+    "price": 2300,
+    "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/171/202/products/granola-black-3-e-5fdd2267b01ef9614d16335452384988-480-0.jpg",
+    "quanty": 1
+  }
+]
