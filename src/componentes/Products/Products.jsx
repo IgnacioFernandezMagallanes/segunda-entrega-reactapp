@@ -1,25 +1,26 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useContext } from "react";
 import { dataContext } from "../Context/DataContext";
+import ProductCard from "./ProductCard";
 import "./Products.css";
 
 export const Products = () => {
-  const {data, buyProducts} = useContext(dataContext);
+  const { products, buyProducts, filterProducts } = useContext(dataContext);
+ 
 
-  
-
-
-  return data.map((product)=>{
-    return(
-        <div className="card" key={product.id}>
-            <img src={product.img} alt="img-product-card"/>
-            <h3>{product.name}</h3>
-            <h4>{product.description}</h4>
-            <h4>${product.price}</h4>
-            <button onClick={()=>buyProducts(product)}>Comprar</button>
-        </div>
-    )
-  });
+  return (
+    <div className="Products">
+      <select className="selectFilter" onChange={event=> filterProducts(event.target.value)}>
+        <option value="Todos">Todos</option>
+        <option value="Frutos Secos">Frutos Secos</option>
+        <option value="Granola">Granola</option>
+      </select>
+      <div className="cardsProducts">
+      {products.map((product) => <ProductCard product={product} buyProducts={buyProducts} />)}
+      </div>
+    </div>
+    
+)
 };
 
 export default Products;

@@ -8,9 +8,7 @@ const Home = () => {
     <Fragment>
       <Navbar />
       <Banner />
-      <div className="product-card-container">
       <Products />
-      </div>
     </Fragment>
   );
 };

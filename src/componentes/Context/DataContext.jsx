@@ -6,9 +6,28 @@ export const dataContext = createContext();
 const DataProvider = ({ children }) => {
   const [data, setData] = useState([]);
   const [cart, setCart] = useState([]);
+  const [products, setProducts] = useState([])
+
+  
+
   useEffect(() => {
-    axios("data.json").then((res) => setData(res.data));
+    axios("data.json").then((res) => {
+      setData(res.data)
+      setProducts(res.data)
+    })
   }, []);
+
+  const filterProducts = (filterType) => {
+
+    if(filterType !== "Todos" ){
+      setProducts(data.filter(product => product.type === filterType ))
+    } else {
+      setProducts(data)
+    }
+    
+  }
+
+
 
   const buyProducts = (product) => {
     const productrepeat = cart.find((item) => item.id === product.id)
@@ -21,7 +40,7 @@ const DataProvider = ({ children }) => {
   }
 
   return ( 
-    <dataContext.Provider value={{ data, cart, setCart, buyProducts }}>{children}</dataContext.Provider>
+    <dataContext.Provider value={{ data, products, cart, filterProducts, setCart, buyProducts }}>{children}</dataContext.Provider>
   );
 };
 
